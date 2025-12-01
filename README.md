@@ -240,3 +240,122 @@ Create a Google Slides file with:
 6. Testing and CI
 7. Deployment summary
 8. Future work
+9. 
+
+
+
+
+
+
+Method	Endpoint	Authentication	Description
+AUTH /USER			
+POST	POST /admin/	Yes	Admin user for the API
+POST	POST /api/users/register/	No	Create User
+POST	POST /api/users/login/	Yes	Login existing User
+DELETE	DELETE /api/users/delete/	Yes	Delete existing User account
+POST	POST /api/token/	No	Get JWT access token
+POST	POST /api/token/refresh/	Yes	Refresh Expired or invalid Token
+MOVIES			
+GET	GET /api/movies/favorites/	Yes	Search for favorite
+POST	POST /api/movies/favorites/	Yes	Add to favorite
+DELETE	DELETE /api /movies/favorites/{id}	Yes	Delete Favorites
+GET	GET /api/movies/search/?query=?	No	Search movies
+GET	GET /api/movies/trending/	No	Check trending movies
+RECOMMENDATION			
+GET	GET /api/movies/users/{user_id}/recommendations/?type=cf&limit=10	Yes	Collaborative filtering based recommendations
+GET	GET /api/api/movies/users/1/recommendations/?type=popular	Yes	Popularity based recommendations
+GET	GET /api/movies/users/{user_id}/recommendations/?type=content&limit=5	Yes	Content /genre based recommendations
+DOCUMENTATION			
+GET	GET /api/docs/	No	Swagger UI
+GET	GET /api/redoc/	No	Redoc/ Open.ai
+			
+<img width="1094" height="442" alt="image" src="https://github.com/user-attachments/assets/41154a76-270e-4a64-a9cb-f6b0ab3446c8" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
